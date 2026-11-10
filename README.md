@@ -1,6 +1,6 @@
 # trismosim-astro
 
-Motor de cálculo astrológico de Trismosim. **Licencia: AGPL-3.0** (este servicio se publicará como repositorio público; la web, la tienda, los textos de interpretación y los datos de clientes no forman parte de él).
+Motor de cálculo astrológico de Trismosim. **Licencia: AGPL-3.0** (código fuente público en https://github.com/easylinkink/trismosim-astro-public; la web, la tienda, los textos de interpretación y los datos de clientes no forman parte de él).
 
 ## Base técnica
 - **Kerykeion 6.0.5** (AGPL-3.0) con **libephemeris 3.2.2** (AGPL-3.0): efemérides **NASA JPL DE440** (1550–2650) y archivos SPK de asteroides (1850–2150).
@@ -64,3 +64,10 @@ KERYKEION_LEB_MODE=skyfield LIBEPHEMERIS_AUTO_SPK=1 .venv/Scripts/python pruebas
 - `pruebas/supernatal_lennon.py`: Quirón y los 4 asteroides clásicos.
 - `pruebas/test_api.py`: pruebas de la API (carta, SuperNatal, hora desconocida, cambio de horario, errores, sinastría, rueda SVG).
 - `pruebas/referencia_swisseph.py`: referencia independiente con Swiss Ephemeris (requiere `pyswisseph`, que compila en Linux con la imagen `python:3.12`; no en Windows con Python 3.14).
+
+## Repositorios
+
+- `origin` → `easylinkink/trismosim-astro` (privado, de trabajo).
+- `publico` → `easylinkink/trismosim-astro-public` (público, exigido por la AGPL).
+
+Cada versión desplegada debe estar también en el público: `git push origin main && git push publico main`.

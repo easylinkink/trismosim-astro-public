@@ -15,7 +15,7 @@ from pydantic import BaseModel, Field, field_validator
 
 from . import motor
 
-CODIGO_FUENTE = os.environ.get('ASTRO_CODIGO_FUENTE', 'https://github.com/trismosim/trismosim-astro')
+CODIGO_FUENTE = os.environ.get('ASTRO_CODIGO_FUENTE', 'https://github.com/easylinkink/trismosim-astro-public')
 log = logging.getLogger('trismosim-astro')
 
 
